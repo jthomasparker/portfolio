@@ -29,7 +29,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Joshua T Parker</a>
+        <a class="navbar-brand js-scroll-trigger" id="brand" href="#page-top"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -83,129 +83,98 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio-section content-section text-center">
-      <div class="container">
-        <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Portfolio</h2>
-          <p>The evolution of a web developer</p>
-          <hr>
-        </div>
-        <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="img/portfolio/magnifying-glass.jpg" alt="RDS Customer Portal">
-                <div class="card-img-overlay">
-                  <h4 class="card-title">RDS Customer Portal</h4>
-                  <p class="card-text">A full-featured portal that connects our customers to our support ticketing system.
-                    <br>Angular | Nodejs | MySql<br><br>
-                  
-                  <a href="#" class="btn btn-default">Demo Coming Soon</a>
-                </p>
-                </div>
-              </div>
-          <div class="card">
-            <img class="card-img-top" src="img/portfolio/01-small.jpg" alt="Concert Cloud">
-            <div class="card-img-overlay">
-              <h4 class="card-title">Concert Cloud</h4>
-              <p class="card-text">Find and save concerts in your area along with event details like weather forecasts and directions
-                <br>jQuery | REST API | Bootstrap<br><br>
-              <a href="https://github.com/jthomasparker/concert-cloud" target="_blank" class="btn btn-default">Code</a>
-              <a href="#" class="btn btn-default">Demo</a>
-              <a href="https://jthomasparker.github.io/concert-cloud/index.html" target="_blank" class="btn btn-default">Live</a>
-            </p>
-            </div>
-          </div>
-
-            <div class="card">
-                <img class="card-img-top" src="img/portfolio/grocery-shopping-cart-1.jpg" alt="Shoptimize">
-                <div class="card-img-overlay">
-                  <h4 class="card-title">Shoptimize</h4>
-                  <p class="card-text">Create a grocery list and find the best prices. Upload your grocery receipts to contribute to the community!
-                    <br>Nodejs | Expressjs | MySql | Sequelizejs<br><br>
-                    <a href="https://github.com/jthomasparker/groceryapp" target="_blank" class="btn btn-default">Code</a>
-                    <a href="#" class="btn btn-default">Demo</a>
-                    <a href="https://shoptimize-jaz.herokuapp.com/" target="_blank" class="btn btn-default">Live</a>
-                  </p>
-                </div>
-              </div>
+        <div class="container">
+          <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Portfolio</h2>
+            <p>The evolution of a web developer</p>
+            <hr>
           </div>
           <div class="card-deck">
               <div class="card">
-                  <img class="card-img-top" src="img/portfolio/friend-finder.jpg" alt="Friend Finder">
+                  <img class="card-img-top" src="img/portfolio/magnifying-glass.jpg" alt="RDS Customer Portal">
                   <div class="card-img-overlay">
-                    <h4 class="card-title">Friend Finder</h4>
-                    <p class="card-text">Fill out a quick survey and find matches
-                      <br>Nodejs | Expressjs | Heroku<br><br>
-                      <a href="https://github.com/jthomasparker/FriendFinder" target="_blank" class="btn btn-default">Code</a>
-                      <a href="#" class="btn btn-default">Demo</a>
-                      <a href="https://gtcbc-friendfinder.herokuapp.com/" target="_blank" class="btn btn-default">Live</a>
-                    </p>
+                    <h4 class="card-title">RDS Customer Portal</h4>
+                    <p class="card-text">A full-featured portal that connects our customers to our support ticketing system.
+                      <br>Angular | Nodejs | MySql<br><br>
+                    
+                      <a href="#portal-modal" data-toggle="modal" class="btn btn-default">Demo</a>
+                  </p>
                   </div>
                 </div>
+            <div class="card">
+              <img class="card-img-top" src="img/portfolio/01-small.jpg" alt="Concert Cloud">
+              <div class="card-img-overlay">
+                <h4 class="card-title">Concert Cloud</h4>
+                <p class="card-text">Find and save concerts in your area along with event details like weather forecasts and directions
+                  <br>jQuery | REST API | Bootstrap<br><br>
+                <a href="https://github.com/jthomasparker/concert-cloud" target="_blank" class="btn btn-default">Code</a>
+                <a href="#" class="btn btn-default">Demo</a>
+                <a href="https://jthomasparker.github.io/concert-cloud/index.html" target="_blank" class="btn btn-default">Live</a>
+              </p>
+              </div>
+            </div>
+  
               <div class="card">
-                  <img class="card-img-top" src="img/portfolio/trivia-image.jpeg" alt="Trivia Game">
+                  <img class="card-img-top" src="img/portfolio/grocery-shopping-cart-1.jpg" alt="Shoptimize">
                   <div class="card-img-overlay">
-                    <h4 class="card-title">Trivia Game</h4>
-                    <p class="card-text">Fun trivia game based on an unusual subject, complete with a custom scoreboard!
-                      <br>JavaScript | Bootstrap | CSS<br>
-                      <a href="https://github.com/jthomasparker/TriviaGame" target="_blank" class="btn btn-default">Code</a>
+                    <h4 class="card-title">Shoptimize</h4>
+                    <p class="card-text">Create a grocery list and find the best prices. Upload your grocery receipts to contribute to the community!
+                      <br>Nodejs | Expressjs | MySql | Sequelizejs<br><br>
+                      <a href="https://github.com/jthomasparker/groceryapp" target="_blank" class="btn btn-default">Code</a>
                       <a href="#" class="btn btn-default">Demo</a>
-                      <a href="https://jthomasparker.github.io/TriviaGame/index.html" target="_blank" class="btn btn-default">Live</a>
+                      <a href="https://shoptimize-jaz.herokuapp.com/" target="_blank" class="btn btn-default">Live</a>
                     </p>
                   </div>
                 </div>
+            </div>
+            <div class="card-deck">
                 <div class="card">
-                    <img class="card-img-top" src="img/portfolio/giftastic.jpeg" alt="GifTastic">
+                    <img class="card-img-top" src="img/portfolio/friend-finder.jpg" alt="Friend Finder">
                     <div class="card-img-overlay">
-                      <h4 class="card-title">GifTastic!</h4>
-                      <p class="card-text">Uses Giphy's API to help you find the best GIFs from your favorite TV Shows
-                        <br>jQuery | REST API | Bootstrap<br>
-                        <a href="https://github.com/jthomasparker/GifTastic" target="_blank" class="btn btn-default">Code</a>
+                      <h4 class="card-title">Friend Finder</h4>
+                      <p class="card-text">Fill out a quick survey and find matches
+                        <br>Nodejs | Expressjs | Heroku<br><br>
+                        <a href="https://github.com/jthomasparker/FriendFinder" target="_blank" class="btn btn-default">Code</a>
                         <a href="#" class="btn btn-default">Demo</a>
-                        <a href="https://jthomasparker.github.io/GifTastic/" target="_blank" class="btn btn-default">Live</a>
+                        <a href="https://gtcbc-friendfinder.herokuapp.com/" target="_blank" class="btn btn-default">Live</a>
                       </p>
                     </div>
                   </div>
-
-          </div>
-          <!--
-          <div class="categories">
-            <ul class="cat">
-              <li>
-                <ol class="type">
-                  <li><a href="#" data-filter="*" class="active btn btn-default">All</a></li>
-                  <li><a href="#" data-filter=".class" class="btn btn-default">Class Projects</a></li>
-                </ol>
-              </li>
-            </ul>
-            <div class="clearfix"></div>
-          </div>
-          <div class="row">
-            <div class="portfolio-items">
-              <div class="col-sm-6 col-md-6 class">
-                <div class="portfolio-item">
-                  <div class="hover-bg"> <a href="./img/portfolio/concert-cloud-image.JPG" title="Concert Cloud" data-lightbox-gallery="gallery1">
-                    <div class="hover-text">
-                      <h4>Concert Cloud</h4>
+                <div class="card">
+                    <img class="card-img-top" src="img/portfolio/trivia-image.jpeg" alt="Trivia Game">
+                    <div class="card-img-overlay">
+                      <h4 class="card-title">Trivia Game</h4>
+                      <p class="card-text">Fun trivia game based on an unusual subject, complete with a custom scoreboard!
+                        <br>JavaScript | Bootstrap | CSS<br>
+                        <a href="https://github.com/jthomasparker/TriviaGame" target="_blank" class="btn btn-default">Code</a>
+                        <a href="#" class="btn btn-default">Demo</a>
+                        <a href="https://jthomasparker.github.io/TriviaGame/index.html" target="_blank" class="btn btn-default">Live</a>
+                      </p>
                     </div>
-                    <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Concert Cloud"> </a> </div>
-                </div>
-              </div>
-          </div>
-
-          <div class="col-sm-6 col-md-6 product">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-                <div class="hover-text">
-                  <h4>Project Title</h4>
-                </div>
-                <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                  </div>
+                  <div class="card">
+                      <img class="card-img-top" src="img/portfolio/giftastic.jpeg" alt="GifTastic">
+                      <div class="card-img-overlay">
+                        <h4 class="card-title">GifTastic!</h4>
+                        <p class="card-text">Uses Giphy's API to help you find the best GIFs from your favorite TV Shows
+                          <br>jQuery | REST API | Bootstrap<br>
+                          <a href="https://github.com/jthomasparker/GifTastic" target="_blank" class="btn btn-default">Code</a>
+                          <a href="#" class="btn btn-default">Demo</a>
+                          <a href="https://jthomasparker.github.io/GifTastic/" target="_blank" class="btn btn-default">Live</a>
+                        </p>
+                      </div>
+                    </div>
+  
             </div>
-          </div>-->
-          <!--<a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>-->
+          </div>
+          <div class="modal fade" id="portal-modal">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <img class="modal-content" src="./img/portfolio/gifs/portal.gif">
+              </div>
+            </div>
         </div>
-      
-      </div>
-    </section>
+      </section>
 
     <!-- Contact Section -->
     <section id="contact" class="content-section text-center">
@@ -260,7 +229,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXapY8cOMGlWSltjTogeWysTZpJQwS6Y0&sensor=false"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+    <script src="js/grayscale.js"></script>
+    <script src="js/custom.js"></script>
 
   </body>
 
