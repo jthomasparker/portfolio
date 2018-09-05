@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    max-width: 100%;
+
+}
+
+.card {
+    overflow: hidden;
+    position: absolute;
+    height: auto;
+    width: auto;
+}
+
+.main-container {
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform .5s ease-out;
+}
+
+/*
+.top-row, .bottom-row{
+    height: 10%;
+    max-width: 100%;
+    position: relative;
+}*/
+
+#main, #about, #contact {
+    left: 10%;
+    right: 10%;
+}
+
+#main {
+    top: 10%;
+   /* height: 80%; */
+    bottom: 10%;
+}
+
+#about {
+    top: -75%;
+    bottom: 95%;
+    
+
+}
+
+#contact {
+    top: 95%;
+    bottom: -75%
+}
+
+#portfolio-one{
+    right: 95%;
+    left: -75%;
+    top: 10%;
+    bottom: 10%;
+}
+
+#portfolio-two{
+    right: -75%;
+    left: 95%;
+    top: 10%;
+    bottom: 10%;
+}
+
+
